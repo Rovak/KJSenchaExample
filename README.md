@@ -3,11 +3,7 @@ KJSenchaExample
 
 Example application for using [KJSencha](https://github.com/Rovak/KJSencha) 
 with [Zend Framework 2](http://framework.zend.com/) 
-<<<<<<< .merge_file_yQgIC1
 and [Sencha Ext JS](http://www.sencha.com/products/extjs/)
-=======
-and [Sencha Ext JS(http://www.sencha.com/products/extjs/)
->>>>>>> .merge_file_YPsdD0
 
 ## Introduction
 
