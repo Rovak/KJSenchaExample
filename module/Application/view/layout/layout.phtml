@@ -1,0 +1,25 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('KJSencha Example Application') ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink()
+                    ->appendStylesheet('http://cdn.sencha.io/ext-4.1.1-gpl/resources/css/ext-all.css')
+                    ->appendStylesheet($this->basepath() . '/css/style.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+                ->prependFile($this->basepath() . '/js/app/app.js') 
+                ->prependFile('http://cdn.sencha.io/ext-4.1.1-gpl/ext-all.js')
+        ?>
+    </head>
+    <body>
+        <?php echo $this->content; ?>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
