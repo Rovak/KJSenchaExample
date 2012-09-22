@@ -10,16 +10,18 @@
         <!-- Le styles -->
         <?php echo $this->headLink()
                     ->appendStylesheet('http://cdn.sencha.io/ext-4.1.1-gpl/resources/css/ext-all.css')
+                    ->appendStylesheet('http://cdn.sencha.io/ext-4.1.1-gpl/examples/shared/example.css')
                     ->appendStylesheet($this->basepath() . '/css/style.css') ?>
 
         <!-- Scripts -->
         <?php echo $this->headScript()
-                ->prependFile($this->basepath() . '/js/app/app.js') 
-                ->prependFile('http://cdn.sencha.io/ext-4.1.1-gpl/ext-all.js')
+                ->prependFile('http://cdn.sencha.io/ext-4.1.1-gpl/ext-all-dev.js')
         ?>
     </head>
     <body>
         <?php echo $this->content; ?>
-        <?php echo $this->inlineScript() ?>
+        <?php echo $this->inlineScript()
+                ->appendFile('http://cdn.sencha.io/ext-4.1.1-gpl/examples/shared/examples.js') 
+                ->appendFile($this->basepath() . '/js/app/app.js') ?>
     </body>
 </html>

@@ -7,33 +7,13 @@ Ext.application({
 
     name: 'KJSenchaApp',
 
-    appFolder: 'app',
+    appFolder: App.basePath + '/js/app',
+    
+    controllers: [
+        'Direct'
+    ],
 
     launch: function() {
-        Ext.create('Ext.container.Viewport', {
-            layout: {
-                type: 'border',
-                padding: '0 5 5 5'
-            },
-            items: [
-                {
-                    id: 'app-header',
-                    xtype: 'box',
-                    region: 'north',
-                    height: 40,
-                    html: 'KJ Sencha'
-                },
-                {
-                    xtype: 'tabpanel',
-                    region: 'center',
-                    plain: true,
-                    items: [
-                        { xtype: 'panel', title: 'Users' },
-                        { xtype: 'panel', title: 'Test' },
-                        { xtype: 'panel', title: 'Test 2' },
-                    ]
-                }
-            ]
-        });
+        Ext.create('KJSenchaApp.view.Viewport');
     }
 });
