@@ -1,6 +1,5 @@
 <?php
 
-use Zend\Loader\AutoloaderFactory;
 use Zend\Mvc\Application;
 
 /**
@@ -9,15 +8,7 @@ use Zend\Mvc\Application;
  */
 chdir(dirname(__DIR__));
 
-require_once 'vendor/zf2/library/Zend/Loader/AutoloaderFactory.php';
-
-AutoloaderFactory::factory(array(
-    'Zend\Loader\StandardAutoloader' => array(
-        'autoregister_zf' => true,
-        'namespaces' => array(
-            'Doctrine\Common' => 'vendor/common/lib/Doctrine/Common',
-        )
-    )
-));
+// Setup autoloading
+require 'init_autoloader.php';
 
 Application::init(include __DIR__ . '/../config/application.config.php')->run();

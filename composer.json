@@ -1,0 +1,24 @@
+{
+    "name": "kablau-joustra/kj-sencha-example",
+    "description": "Example application for using KJSencha with Zend Framework 2",
+    "type": "Application",
+    "license": "MIT",
+    "keywords": [
+        "zf2",
+        "sencha",
+        "extjs"
+    ],
+    "homepage": "https://github.com/KablauJoustra/KJSenchaExample",
+    "authors": [
+        {
+            "name": "KJ Business Software",
+            "email": "opensource@kj.nu",
+            "homepage": "http://www.kj.nu/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*",
+        "kablau-joustra/kj-sencha": "dev-master"
+    }
+}

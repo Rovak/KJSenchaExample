@@ -2,6 +2,7 @@
 return array(
     'modules' => array(
         'Application',
+        'AssetManager',
         'KJSencha',
     ),
     'module_listener_options' => array(
