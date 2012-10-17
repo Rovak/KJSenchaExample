@@ -19,6 +19,6 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "kablau-joustra/kj-sencha": "dev-master"
+        "kablau-joustra/kj-sencha": "0.*"
     }
 }
