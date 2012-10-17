@@ -49,7 +49,7 @@ Ext.define('KJSenchaApp.view.direct.Named', {
                     text: 'Send',
                     handler: function(){
                         var values = form.getForm().getValues();
-                        Application.direct.NamedArguments.showDetails(values, function(value){
+                        Application.Direct.NamedArguments.showDetails(values, function(value){
                             Ext.example.msg('Server Response', value);
                         });
                     }

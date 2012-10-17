@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Direct;
+namespace Application\Direct\Form;
 
 use KJSencha\Direct\AbstractDirectController;
 

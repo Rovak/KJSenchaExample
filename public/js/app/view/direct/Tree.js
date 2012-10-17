@@ -17,7 +17,7 @@ Ext.define('KJSenchaApp.view.direct.Tree', {
             },
             proxy: {
                 type: 'direct',
-                directFn: Application.direct.Tree.getTree,
+                directFn: Application.Direct.Tree.getTree,
                 paramOrder: ['node']
             }
         });

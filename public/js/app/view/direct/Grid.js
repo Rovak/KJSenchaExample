@@ -15,7 +15,7 @@ Ext.define('KJSenchaApp.view.direct.Grid', {
         }],
         proxy: {
             type: 'direct',
-            directFn: Application.direct.Grid.getGrid
+            directFn: Application.Direct.Grid.getGrid
         },
         fields: [
             { name: 'name' },

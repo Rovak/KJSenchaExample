@@ -19,9 +19,9 @@ Ext.define('KJSenchaApp.view.direct.Form', {
             // configs for BasicForm
             api: {
                 // The server-side method to call for load() requests
-                load: Application.direct.form.Profile.getBasicInfo,
+                load: Application.Direct.form.Profile.getBasicInfo,
                 // The server-side must mark the submit handler as a 'formHandler'
-                submit: Application.direct.form.Profile.updateBasicInfo
+                submit: Application.Direct.form.Profile.updateBasicInfo
             },
             // specify the order for the passed params
             dockedItems: [{
@@ -57,7 +57,7 @@ Ext.define('KJSenchaApp.view.direct.Form', {
             title: 'Phone Numbers',
             border: false,
             api: {
-                load: Application.direct.form.Profile.getPhoneInfo
+                load: Application.Direct.form.Profile.getPhoneInfo
             },
             bodyPadding: 10,
             defaultType: 'textfield',
@@ -81,7 +81,7 @@ Ext.define('KJSenchaApp.view.direct.Form', {
             border: false,
             bodyPadding: 10,
             api: {
-                load: Application.direct.form.Profile.getLocationInfo
+                load: Application.Direct.form.Profile.getLocationInfo
             },
             defaultType: 'textfield',
             defaults: {
