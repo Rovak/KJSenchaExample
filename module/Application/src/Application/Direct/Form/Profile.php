@@ -33,7 +33,7 @@ class Profile
     {
         return array(
             'errors' => array(
-                'name' => 'klopt niet!'
+                'name' => 'Wrong info!'
             )
         );
     }
