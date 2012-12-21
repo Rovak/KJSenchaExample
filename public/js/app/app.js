@@ -10,7 +10,8 @@ Ext.application({
     appFolder: App.basePath + '/js/app',
     
     controllers: [
-        'Direct'
+        'Direct',
+        'Service'
     ],
 
     launch: function() {

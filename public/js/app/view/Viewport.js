@@ -27,6 +27,10 @@ Ext.define('KJSenchaApp.view.Viewport', {
                 { 
                     title: 'Direct',
                     xtype: 'directTab'
+                },
+                { 
+                    title: 'Service',
+                    xtype: 'serviceTab'
                 }
             ]
         }

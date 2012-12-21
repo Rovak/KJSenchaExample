@@ -1,13 +1,9 @@
 <?php
 
-/**
- * Zend Framework (http://framework.zend.com/)
- *
- * @link      http://github.com/zendframework/ZendSkeletonApplication for the canonical source repository
- * @copyright Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd New BSD License
- */
 return array(
+    /**
+     * KJ Sencha
+     */
     'kjsencha' => array(
         'direct' => array(
             'modules' => array(
@@ -15,6 +11,9 @@ return array(
                     'namespace' => 'Application\Direct',
                     'directory' => __DIR__ . '/../src/Application/Direct',
                 ),
+            ),
+            'services' => array(
+                'Application.service.Grid' => 'app_direct_service_grid',
             ),
         ),
         'bootstrap' => array(
@@ -27,6 +26,9 @@ return array(
             ),
         ),
     ),
+    /**
+     * Router
+     */
     'router' => array(
         'routes' => array(
             'home' => array(
