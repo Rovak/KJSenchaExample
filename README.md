@@ -12,9 +12,16 @@ build apps with Zend Framework 2 and the [Sencha Ext JS](http://www.sencha.com/p
 
 ## Requirements
 
-KJSenchaExample is based on the Zend Framework 2 
+KJSenchaExample is based on the Zend Framework 2
 
-## Download
+## Installation
 
-The example application can be downloaded from the 
-[Download page](https://github.com/KablauJoustra/KJSenchaExample/downloads),
+You can install this module via [composer](https://getcomposer.org/) by running the following
+command in your application's root directory:
+
+```sh
+$ ./composer.phar create-project kablau-joustra/kj-sencha-example
+```
+
+You can also install this module without composer, assuming you meet all the dependencies
+specified in [`composer.json`](https://github.com/KablauJoustra/KJSenchaExample/blob/master/composer.json)
