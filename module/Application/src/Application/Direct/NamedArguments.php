@@ -7,10 +7,16 @@ namespace Application\Direct;
  */
 class NamedArguments
 {
-    public function showDetails($values)
+    /**
+     * Key => Value pair of arguments
+     *
+     * @param array $values
+     * @return string
+     */
+    public function showDetails(array $values)
     {
         return sprintf(
-            'Hi %s %s, you are %d years old', 
+            'Hi %s %s, you are %d years old',
             $values['firstName'],
             $values['lastName'],
             $values['age']

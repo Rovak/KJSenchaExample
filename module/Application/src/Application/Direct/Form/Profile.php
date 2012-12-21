@@ -9,7 +9,7 @@ class Profile
 
     /**
      * Basic information
-     * 
+     *
      * @return array
      */
     public function getBasicInfo()
@@ -18,7 +18,7 @@ class Profile
             'success' => true,
             'data' => array(
                 'name' => 'Roy van Kaathoven',
-                'email' => 'email@email.nl',
+                'email' => 'opensource@kj.nu',
                 'company' => 'KJ Business Software',
             )
         );
@@ -26,7 +26,7 @@ class Profile
 
     /**
      * Update basic information
-     * 
+     *
      * @Ext\Formhandler
      */
     public function updateBasicInfo($values)

@@ -4,12 +4,18 @@ namespace Application\Direct;
 
 /**
  * Direct Tree Example
- * 
+ *
  * @see http://docs.sencha.com/ext-js/4-1/#!/example/direct/direct-tree.html
  */
 class Tree
 {
 
+    /**
+     * Retrieve the nodes by a given ID
+     *
+     * @param string $id "root" or "n{number}"
+     * @return array
+     */
     public function getTree($id)
     {
         $out = array();
@@ -21,7 +27,10 @@ class Tree
                     'leaf' => false
                 ));
             }
-        } else if (strlen($id) == 2) {
+
+        }
+        // Check if the id is 2 long which means it is appended by a N
+        else if (strlen($id) == 2) {
             $num = substr($id, 1);
             for ($i = 1; $i <= 5; ++$i) {
                 array_push($out, array(

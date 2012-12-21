@@ -7,17 +7,29 @@ use Doctrine\Common\Collections\Criteria;
 
 /**
  * Direct Grid Example
+ *
+ * Generates row data to output to the Grid example
+ *
+ * The data will build an ArrayCollection with increasing numbers
+ * and the result is being filtered, sorted etc by the Criteria API
+ * which is taken from the Doctrine\Common library
+ *
+ * @see http://docs.doctrine-project.org/en/latest/reference/working-with-associations.html#filtering-collections
  */
 class Grid
 {
-
-    protected function getData()
+    /**
+     * Generated random rows
+     *
+     * @param array $fields
+     * @param integer $num
+     * @return ArrayCollection
+     */
+    protected function getData(array $fields, $num = 50)
     {
-        $fields = array('name', 'info');
-
         $data = new ArrayCollection();
 
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < $num; $i++) {
             $row = array();
             foreach ($fields as $field) {
                 $row[$field] = ucfirst($field) . ' ' . $i;
@@ -28,12 +40,23 @@ class Grid
         return $data;
     }
 
+    /**
+     * Retrieve the grid data by the given parameters, the Ext JS Store will
+     * pass the following parameters:
+     *
+     *      start:  Where to begin
+     *      limit:  How many results to return
+     *      sort:   Array of sort values
+     *
+     * @param array $values
+     * @return array
+     */
     public function getGrid($values)
     {
         $criteria = Criteria::create()
             ->setFirstResult($values['start'])
             ->setMaxResults($values['limit']);
-        
+
         // Add sorting
         if (!empty($values['sort'])) {
             $orderBy = array();
@@ -42,10 +65,10 @@ class Grid
             }
             $criteria->orderBy($orderBy);
         }
-        
-        $data = $this->getData()->matching($criteria);
 
-        return $data->toArray();
+        return $this
+                ->getData(array('name', 'info'))
+                ->matching($criteria)
+                ->toArray();
     }
-
 }
