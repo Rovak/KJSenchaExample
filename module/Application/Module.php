@@ -11,16 +11,10 @@
 namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
+use KJSencha\Frontend as Ext;
 
 class Module
 {
-
-    public function onBootstrap($e)
-    {
-        $eventManager = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
-    }
 
     public function getAutoloaderConfig()
     {
@@ -41,6 +35,19 @@ class Module
     public function getServiceConfig()
     {
         return include __DIR__ . '/config/services.config.php';
+    }
+
+    public function getComponentConfig()
+    {
+        return array(
+            'factories' => array(
+                'TestComponent' => function($sm) {
+                    return new Ext\Panel(array(
+                        'title' => 'Test Component'
+                    ));
+                }
+            )
+        );
     }
 
 }

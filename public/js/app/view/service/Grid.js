@@ -1,11 +1,11 @@
 Ext.define('KJSenchaApp.view.service.Grid', {
-    
+
     extend: 'Ext.grid.Panel',
-    
+
     alias: 'widget.serviceGrid',
-    
+
     title: 'Company Grid',
-    
+
     store: {
         remoteSort: true,
         autoLoad: true,

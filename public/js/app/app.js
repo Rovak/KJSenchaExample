@@ -11,10 +11,12 @@ Ext.application({
     
     controllers: [
         'Direct',
-        'Service'
+        'Service',
+        'PHP'
     ],
 
     launch: function() {
+    	KJSenchaApp.data = Ext.create('KJSencha.data.Factory');
         Ext.create('KJSenchaApp.view.Viewport');
     }
 });

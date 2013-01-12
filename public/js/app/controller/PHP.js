@@ -1,12 +1,12 @@
-Ext.define('KJSenchaApp.controller.Service', {
+Ext.define('KJSenchaApp.controller.PHP', {
     
     extend: 'Ext.app.Controller',
     
     views: [
-        'service.Grid',
-        'service.Tab'
+        'php.Tab',
+        'php.Popup'
     ],
-
+    
     init: function() {
         
     }

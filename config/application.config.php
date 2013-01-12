@@ -1,9 +1,9 @@
 <?php
 return array(
     'modules' => array(
-        'Application',
-        'AssetManager',
         'KJSencha',
+        'AssetManager',
+        'Application',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
