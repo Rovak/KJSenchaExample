@@ -28,6 +28,9 @@ class Module
         return include __DIR__ . '/config/services.config.php';
     }
 
+    /**
+     * @return array
+     */
     public function getComponentConfig()
     {
         return array(
