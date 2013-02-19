@@ -2,9 +2,9 @@
  * Viewport
  */
 Ext.define('KJSenchaApp.view.Viewport', {
-    
+
     extend: 'Ext.container.Viewport',
-    
+
     layout: {
         type: 'border',
         padding: '0 5 5 5'
@@ -24,13 +24,17 @@ Ext.define('KJSenchaApp.view.Viewport', {
             plain: true,
             layout:'fit',
             items: [
-                { 
+                {
                     title: 'Direct',
                     xtype: 'directTab'
                 },
-                { 
+                {
                     title: 'Service',
                     xtype: 'serviceTab'
+                },
+                {
+                    title: 'PHP Components',
+                    xtype: 'phpTab'
                 }
             ]
         }
