@@ -19,6 +19,7 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
+        "rwoverdijk/assetmanager": "1.*",
         "kablau-joustra/kj-sencha": "0.*"
     }
 }

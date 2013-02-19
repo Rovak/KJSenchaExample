@@ -27,6 +27,16 @@ return array(
         ),
     ),
     /**
+     * AssetManager config to allow serving files from the `public` dir in this module
+     */
+    'asset_manager' => array(
+        'resolver_configs' => array(
+            'paths' => array(
+                'KJSenchaExample' => __DIR__ . '/../public',
+            ),
+        ),
+    ),
+    /**
      * Router
      */
     'router' => array(
