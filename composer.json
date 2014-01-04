@@ -1,5 +1,5 @@
 {
-    "name": "kablau-joustra/kj-sencha-example",
+    "name": "rovak/kj-sencha-example",
     "description": "Example application for using KJSencha with Zend Framework 2",
     "type": "Application",
     "license": "MIT",
@@ -8,18 +8,18 @@
         "sencha",
         "extjs"
     ],
-    "homepage": "https://github.com/KablauJoustra/KJSenchaExample",
+    "homepage": "https://github.com/Rovak/KJSenchaExample",
     "authors": [
         {
-            "name": "KJ Business Software",
-            "email": "opensource@kj.nu",
-            "homepage": "http://www.kj.nu/"
+            "name": "Roy van Kaathoven",
+            "email": "ik@royvankaathoven.nl",
+            "homepage": "http://www.rovak.pro/"
         }
     ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
         "rwoverdijk/assetmanager": "1.*",
-        "kablau-joustra/kj-sencha": "0.*"
+        "rovak/kj-sencha": "0.*"
     }
 }
