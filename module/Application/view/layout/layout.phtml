@@ -3,14 +3,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <?php $this->extJs()->loadLibrary(); ?>
         <?php echo $this->headTitle('KJSencha Example Application') ?>
 
         <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
 
-        <!-- Le styles -->
         <?php echo $this->headLink()
-                    ->appendStylesheet('http://cdn.sencha.io/ext-4.1.1-gpl/resources/css/ext-all.css')
-                    ->appendStylesheet('http://cdn.sencha.io/ext-4.1.1-gpl/examples/shared/example.css')
                     ->appendStylesheet($this->basepath() . '/css/style.css') ?>
 
         <!-- Scripts -->
@@ -19,7 +17,6 @@
     <body>
         <?php echo $this->content; ?>
         <?php echo $this->inlineScript()
-                ->appendFile('http://cdn.sencha.io/ext-4.1.1-gpl/examples/shared/examples.js') 
                 ->appendFile($this->basepath() . '/js/app/app.js') ?>
     </body>
 </html>

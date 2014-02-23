@@ -5,6 +5,12 @@ return array(
      * KJ Sencha
      */
     'kjsencha' => array(
+        'css' => array(
+            'example' => 'examples/shared/example.css'
+        ),
+        'js' => array(
+            'example' => 'examples/shared/examples.js'
+        ),
         'direct' => array(
             'modules' => array(
                 'Application' => array(
